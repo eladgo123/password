@@ -10,11 +10,12 @@ function Pas(props) {
         setstrength("Medium")
         disableBtn(false)
       }
-      if (password.length > 6) {
+      else if (password.length > 6) {
           setstrength("Big")
           disableBtn(false)
       } else {
         setstrength("WEAK")
+        disableBtn(true)
       }
     },[password,disableBtn])
     

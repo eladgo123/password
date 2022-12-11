@@ -3,7 +3,7 @@ import Pas from './Pas' ;
 import { useState } from 'react';
 
 function App() {
-    const[password,setpassword] = useState(1)
+    const[password,setpassword] = useState("")
     const[btn , setbtn] = useState(true)
     
     function hendelPassword(e){
